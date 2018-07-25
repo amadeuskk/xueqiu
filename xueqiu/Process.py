@@ -18,7 +18,7 @@ def run(num):
     # 链接数据库
     while True:
         try:
-            db = pymysql.connect(host='10.11.255.110', port=31306, user='rreportor', password='saWQR432QR',
+            db = pymysql.connect(host='xx.xx.xxxx', port=3306, user='root', password='root',
                                  db='r_reportor',
                                  charset='utf8')
             cursor = db.cursor()

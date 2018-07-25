@@ -186,7 +186,7 @@ def get_user_agent():
     return random.choice(headers)
 
 def getproxies():
-    mongo_proxy = pymongo.MongoClient('mongodb://spider2:ThE_eJedRE5a@dds-bp1d09d4b278ceb41.mongodb.rds.aliyuncs.com:3717,dds-bp1d09d4b278ceb42.mongodb.rds.aliyuncs.com:3717/original_data?replicaSet=mgset-3255385')['original_data']
+    mongo_proxy = pymongo.MongoClient('###################')['######']
     items = getattr(mongo_proxy, 'Charge_Proxy').find({}).sort("response_time", 1).limit(10)
     items = list(items)
     proxy = [i.get("proxy") for i in items]
